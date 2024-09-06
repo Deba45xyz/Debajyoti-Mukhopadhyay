@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Travel - Explore Goa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+    <link rel="stylesheet" href="goa4.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Book Your Travel</h1>
+            <div class="top-nav">
+                <a href="goa4.html">Home</a>
+                <a href="goa4sign.html">Login</a>
+                <a href="#">Language</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Booking Form -->
+    <section class="booking-form">
+        <h2>Select Your Destination and Book Now</h2>
+        <form action="#" method="post">
+            <label for="destination">Choose Destination:</label>
+            <select id="destination" name="destination">
+                <option value="mollem">Mollem</option>
+                <option value="ponda">Ponda</option>
+                <option value="sanguem">Sanguem</option>
+                <option value="quepem">Quepem</option>
+                <option value="margao">Margao</option>
+            </select>
+            
+            <label for="hotel">Select Hotel Type:</label>
+            <select id="hotel" name="hotel">
+                <option value="luxury">Luxury</option>
+                <option value="medium">Medium</option>
+                <option value="budget">Budget</option>
+            </select>
+            
+            <label for="dates">Choose Dates:</label>
+            <input type="date" id="checkin" name="checkin">
+            <input type="date" id="checkout" name="checkout">
+            
+            <label for="transport">Select Transport:</label>
+            <select id="transport" name="transport">
+                <option value="car">Car</option>
+                <option value="bus">Bus</option>
+                <option value="rail">Rail</option>
+            </select>
+            
+            <input type="submit" value="Book Now">
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Explore Goa. All Rights Reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="goa4term.html">Terms of Service</a></p>
+        </div>
+    </footer>
+</body>
+</html>
+
