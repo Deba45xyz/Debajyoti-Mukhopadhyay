@@ -1,235 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoaUI</title>
+    <title>Explore Goa - Next-Gen Travel</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
     <link rel="stylesheet" href="goa4.css">
+    <script src="goa4.js" defer></script>
 </head>
-
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-logo">
-            <a href="#"><img src="images/goa-logo.png" alt="Goa Logo"></a>
-        </div>
-        <nav class="header-nav">
-            <a href="#" class="nav-item">Home</a>
-            <a href="#" class="nav-item">Help</a>
-            <div class="dropdown">
-                <a href="#" class="nav-item">Language <i class="ri-arrow-down-s-line"></i></a>
-                <div class="dropdown-content">
-                    <a href="#" >English</a>
-                    <a href="#" >Konkani</a>
-                    <a href="#" >Marathi</a>
-                    <a href="#">Hindi</a>
-                    <a href="#">Portuguese</a>
+    <!-- Top Navigation -->
+    <header>
+        <div class="header-container">
+            <h1>Explore Goa - Next-Gen Travel</h1>
+            <nav class="top-nav">
+                <a href="goa4.html">Home</a>
+                <div class="language-dropdown">
+                    <button class="dropbtn">Language</button>
+                    <div class="dropdown-content">
+                        <a href="#">English</a>
+                        <a href="#">Hindi</a>
+                        <a href="#">Konkani</a>
+                    </div>
                 </div>
-            </div>
-            <a href="#" class="nav-item">Login</a>
-        </nav>
+                <a href="goa4sign.html">Sign In</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-backgrounds">
-            <div class="background-image" id="background1"></div>
-            <div class="background-image" id="background2"></div>
-            <div class="background-image" id="background3"></div>
+    <div class="search-map-container">
+        <div class="search-bar">
+            <input type="text" placeholder="Search destinations...">
+            <button>Search</button>
         </div>
-        <div class="hero-content">
-            <h1>Discover the Magic of Goa</h1>
-            <p>Explore the best places, hotels, and more!</p>
-            <form class="search-form">
-                <input type="text" placeholder="Search destinations, hotels...">
-                <button type="submit"><i class="ri-search-line"></i></button>
-            </form>
+        <div class="map">
+            <img src="images/goa-map.jpg" alt="Goa Map">
         </div>
-    </section>
+    </div>
 
-    <!-- Goa Map Section -->
-    <section class="map-section">
-        <h2>Explore Goa</h2>
-        <img src="images/goa-map.png" alt="Goa Map">
-    </section>
 
-    <!-- Location Details Section -->
-    <section class="location-details">
-        <h2>Discover Goa's Top Locations</h2>
+    <!-- Background Images that Change -->
+    <div class="slideshow">
+        <img class="background" src="images/beach1.jpg" alt="Goa Beach 1">
+        <img class="background" src="images/beach2.jpg" alt="Goa Beach 2">
+        <img class="background" src="images/beach3.jpg" alt="Goa Beach 3">
+    </div>
 
-        <!-- Mollem -->
-        <div class="location-card" data-location="mollem">
-            <img src="images/mollem.jpg" alt="Mollem">
-            <div class="location-content">
-                <h3>Mollem</h3>
-                <p>Explore Mollem's stunning natural beauty, including waterfalls, springs, and local markets.</p>
+    <!-- Tourist Spots Section -->
+    <section class="tourist-spots">
+        <h2>Top 5 Tourist Spots in Goa</h2>
+
+        <!-- Tourist Spot 1: Mollem -->
+        <div class="tourist-spot">
+            <h3>Mollem</h3>
+            <p>Mollem is known for its lush greenery, wildlife, and beautiful waterfalls.</p>
+            <h4>Why Visit Mollem?</h4>
+            <ul>
+                <li>Explore wildlife sanctuaries</li>
+                <li>Enjoy scenic waterfalls</li>
+                <li>Adventure through the jungle</li>
+            </ul>
+            <h4>Distance & Transport:</h4>
+            <ul>
+                <li><i class="ri-train-line"></i> Railway: 10 km from Mollem Railway Station</li>
+                <li><i class="ri-bus-line"></i> Bus: 8 km from Mollem Bus Stop</li>
+                <li><i class="ri-car-line"></i> Car Route: 65 km from Panaji</li>
+            </ul>
+            <div class="route-images">
+                <h4>Route Images</h4>
+                <img src="images/mollem_railway.jpg" alt="Mollem Railway Route">
+                <img src="images/mollem_bus.jpg" alt="Mollem Bus Route">
+                <img src="images/mollem_car.jpg" alt="Mollem Car Route">
+            </div>
+
+            <!-- Hotel Options -->
+            <div class="hotels">
+                <h4>Hotel Options in Mollem</h4>
+                <h5>Luxury Hotels</h5>
                 <ul>
-                    <li>Vazani Waterfall - <a href="https://www.youtube.com/watch?v=example1" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Girmal Waterfall - <a href="https://www.youtube.com/watch?v=example2" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Devkhol Waterfall - <a href="https://www.youtube.com/watch?v=example3" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Kotambi Spring - <a href="https://www.youtube.com/watch?v=example4" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Sada Waterfall - <a href="https://www.youtube.com/watch?v=example5" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Mollem Market - <a href="https://www.youtube.com/watch?v=example6" class="youtube-link">Watch on YouTube</a></li>
+                    <li>Goa Wilderness Resort - ₹6000/night <a href="goa4booking.html">Book Now</a></li>
                 </ul>
-                <button class="load-more">Learn More</button>
-                <div class="location-extra" style="display: none;">
-                    <h4>Hotels</h4>
-                    <ul>
-                        <li>Top Budget Hotel: <strong>Dudhsagar Resort</strong> - Rs 3500 per night <img src="images/dudhsagar-resort.jpg" alt="Dudhsagar Resort" class="hotel-image"></li>
-                        <li>Medium Budget Hotel: <strong>Jungle Retreat</strong> - Rs 1200 per night <img src="images/jungle-retreat.jpg" alt="Jungle Retreat" class="hotel-image"></li>
-                        <li>Low Budget Hotel: <strong>Local Lodge</strong> - Rs 700 per night <img src="images/local-lodge.jpg" alt="Local Lodge" class="hotel-image"></li>
-                    </ul>
-                    <h4>Transport</h4>
-                    <p>Accessible via road; best explored by car or bike. <img src="images/car-icon.png" alt="Car Icon" class="transport-icon"><img src="images/bike-icon.png" alt="Bike Icon" class="transport-icon"></p>
-                    <h4>Food</h4>
-                    <p>Enjoy local delicacies like Xacuti and Goan sausages. <img src="images/xacuti.jpg" alt="Xacuti" class="food-image"></p>
-                    <h4>Famous For</h4>
-                    <p>Waterfalls and tranquil nature spots.</p>
-                </div>
+                <h5>Mid-Range Hotels</h5>
+                <ul>
+                    <li>Forest Edge Hotel - ₹3000/night <a href="goa4booking.html">Book Now</a></li>
+                </ul>
+                <h5>Budget Hotels</h5>
+                <ul>
+                    <li>Mollem Jungle Stay - ₹1000/night <a href="goa4booking.html">Book Now</a></li>
+                </ul>
+            </div>
+
+            <!-- Side Attractions -->
+            <div class="side-attractions">
+                <h4>Side Attractions</h4>
+                <ul>
+                    <li>Dudhsagar Waterfalls <img src="images/dudhsagar.jpg" alt="Dudhsagar Waterfalls"> <a href="https://www.youtube.com/watch?v=dudhsagar-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Tambi Surla Temple <img src="images/tambi-surla.jpg" alt="Tambi Surla Temple"> <a href="https://www.youtube.com/watch?v=tambdi-surla-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Bhagwan Mahavir Wildlife Sanctuary <img src="images/bhagwan-mahavir.jpg" alt="Bhagwan Mahavir Wildlife Sanctuary"> <a href="https://www.youtube.com/watch?v=bhagwan-mahavir-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Mollem National Park <img src="images/mollem-national-park.jpg" alt="Mollem National Park"> <a href="https://www.youtube.com/watch?v=mollem-national-park-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Devil’s Canyon <img src="images/devils-canyon.jpg" alt="Devil’s Canyon"> <a href="https://www.youtube.com/watch?v=devils-canyon-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Tambdi Surla Waterfall <img src="images/tambdi-surla-waterfall.jpg" alt="Tambdi Surla Waterfall"> <a href="https://www.youtube.com/watch?v=tambdi-surla-waterfall-video" target="_blank">Watch on YouTube</a></li>
+                </ul>
             </div>
         </div>
 
-        <!-- Ponda -->
-        <div class="location-card" data-location="ponda">
-            <img src="images/ponda.jpg" alt="Ponda">
-            <div class="location-content">
-                <h3>Ponda</h3>
-                <p>Ponda is a cultural hub with temples, spice plantations, and a vibrant local scene.</p>
+        <!-- Tourist Spot 2: Ponda -->
+        <div class="tourist-spot">
+            <h3>Ponda</h3>
+            <p>Ponda is known for its rich cultural heritage and vibrant local markets.</p>
+            <h4>Why Visit Ponda?</h4>
+            <ul>
+                <li>Visit ancient temples</li>
+                <li>Explore spice plantations</li>
+                <li>Enjoy local festivals</li>
+            </ul>
+            <h4>Distance & Transport:</h4>
+            <ul>
+                <li><i class="ri-train-line"></i> Railway: 25 km from Ponda Railway Station</li>
+                <li><i class="ri-bus-line"></i> Bus: 12 km from Ponda Bus Stop</li>
+                <li><i class="ri-car-line"></i> Car Route: 40 km from Panaji</li>
+            </ul>
+            <div class="route-images">
+                <h4>Route Images</h4>
+                <img src="images/ponda_railway.jpg" alt="Ponda Railway Route">
+                <img src="images/ponda_bus.jpg" alt="Ponda Bus Route">
+                <img src="images/ponda_car.jpg" alt="Ponda Car Route">
+            </div>
+
+            <!-- Hotel Options -->
+            <div class="hotels">
+                <h4>Hotel Options in Ponda</h4>
+                <h5>Luxury Hotels</h5>
                 <ul>
-                    <li>Sahakari Spice Farm - <a href="https://www.youtube.com/watch?v=example7" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Mangeshi Temple - <a href="https://www.youtube.com/watch?v=example8" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Ponda Wildlife Sanctuary - <a href="https://www.youtube.com/watch?v=example9" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Usgalimal Rock Carvings - <a href="https://www.youtube.com/watch?v=example10" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Khandepar Village - <a href="https://www.youtube.com/watch?v=example11" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Ponda Market - <a href="https://www.youtube.com/watch?v=example12" class="youtube-link">Watch on YouTube</a></li>
+                    <li>Royal Ponda Suites - ₹7000/night <a href="goa4booking.html">Book Now</a></li>
                 </ul>
-                <button class="load-more">Learn More</button>
-                <div class="location-extra" style="display: none;">
-                    <h4>Hotels</h4>
-                    <ul>
-                        <li>Top Budget Hotel: <strong>Ponda Inn</strong> -Rs 5000 per night <img src="images/ponda-inn.jpg" alt="Ponda Inn" class="hotel-image"></li>
-                        <li>Medium Budget Hotel: <strong>Temple View Hotel</strong> - Rs 2700 per night <img src="images/temple-view.jpg" alt="Temple View Hotel" class="hotel-image"></li>
-                        <li>Low Budget Hotel: <strong>Local Guesthouse</strong> - Rs 1100 per night <img src="images/local-guesthouse.jpg" alt="Local Guesthouse" class="hotel-image"></li>
-                    </ul>
-                    <h4>Transport</h4>
-                    <p>Easily accessible by road; frequent buses and taxis available. <img src="images/bus-icon.png" alt="Bus Icon" class="transport-icon"><img src="images/taxi-icon.png" alt="Taxi Icon" class="transport-icon"></p>
-                    <h4>Food</h4>
-                    <p>Try the traditional Goan fish curry and local sweets like Bebinca. <img src="images/fish-curry.jpg" alt="Fish Curry" class="food-image"></p>
-                    <h4>Famous For</h4>
-                    <p>Temples and spice plantations. <img src="" alt="Famous" class="temple-image"></p>
-                </div>
+                <h5>Mid-Range Hotels</h5>
+                <ul>
+                    <li>Spice Villa - ₹3500/night <a href="goa4booking.html">Book Now</a></li>
+                </ul>
+                <h5>Budget Hotels</h5>
+                <ul>
+                    <li>Ponda Guest House - ₹1200/night <a href="goa4booking.html">Book Now</a></li>
+                </ul>
+            </div>
+
+            <!-- Side Attractions -->
+            <div class="side-attractions">
+                <h4>Side Attractions</h4>
+                <ul>
+                    <li>Shree Mahalasa Temple <img src="images/mahalasa-temple.jpg" alt="Shree Mahalasa Temple"> <a href="https://www.youtube.com/watch?v=mahalasa-temple-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Spice Farm <img src="images/spice-farm.jpg" alt="Spice Farm"> <a href="https://www.youtube.com/watch?v=spice-farm-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Shree Navdurga Temple <img src="images/navdurga-temple.jpg" alt="Shree Navdurga Temple"> <a href="https://www.youtube.com/watch?v=navdurga-temple-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Bondla Wildlife Sanctuary <img src="images/bondla-santuary.jpg" alt="Bondla Wildlife Sanctuary"> <a href="https://www.youtube.com/watch?v=bondla-santuary-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Shree Shantadurga Temple <img src="images/shantadurga-temple.jpg" alt="Shree Shantadurga Temple"> <a href="https://www.youtube.com/watch?v=shantadurga-temple-video" target="_blank">Watch on YouTube</a></li>
+                </ul>
             </div>
         </div>
 
-        <!-- Sanguem -->
-        <div class="location-card" data-location="sanguem">
-            <img src="images/sanguem.jpg" alt="Sanguem">
-            <div class="location-content">
-                <h3>Sanguem</h3>
-                <p>Known for its natural attractions, Sanguem is a paradise for nature lovers.</p>
+        <!-- Tourist Spot 3: Sanguem -->
+        <div class="tourist-spot">
+            <h3>Sanguem</h3>
+            <p>Sanguem offers a tranquil retreat with beautiful natural landscapes and historical sites.</p>
+            <h4>Why Visit Sanguem?</h4>
+            <ul>
+                <li>Visit the ancient temples</li>
+                <li>Explore scenic waterfalls</li>
+                <li>Experience local culture</li>
+            </ul>
+            <h4>Distance & Transport:</h4>
+            <ul>
+                <li><i class="ri-train-line"></i> Railway: 30 km from Sanguem Railway Station</li>
+                <li><i class="ri-bus-line"></i> Bus: 15 km from Sanguem Bus Stop</li>
+                <li><i class="ri-car-line"></i> Car Route: 50 km from Panaji</li>
+            </ul>
+            <div class="route-images">
+                <h4>Route Images</h4>
+                <img src="images/sanguem_railway.jpg" alt="Sanguem Railway Route">
+                <img src="images/sanguem_bus.jpg" alt="Sanguem Bus Route">
+                <img src="images/sanguem_car.jpg" alt="Sanguem Car Route">
+            </div>
+
+            <!-- Hotel Options -->
+            <div class="hotels">
+                <h4>Hotel Options in Sanguem</h4>
+                <h5>Luxury Hotels</h5>
                 <ul>
-                    <li>Dudhsagar Waterfall - <a href="https://www.youtube.com/watch?v=example13" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Kalem Wildlife Sanctuary - <a href="https://www.youtube.com/watch?v=example14" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Vajra Waterfall - <a href="https://www.youtube.com/watch?v=example15" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Surla Waterfall - <a href="https://www.youtube.com/watch?v=example16" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Molem National Park - <a href="https://www.youtube.com/watch?v=example17" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Sanguem Market - <a href="https://www.youtube.com/watch?v=example18" class="youtube-link">Watch on YouTube</a></li>
+                    <li>Sanguem Royal Stay - ₹8000/night <a href="goa4booking.html">Book Now</a></li>
                 </ul>
-                <button class="load-more">Learn More</button>
-                <div class="location-extra" style="display: none;">
-                    <h4>Hotels</h4>
-                    <ul>
-                        <li>Top Budget Hotel: <strong>Dudhsagar Resort</strong> - Rs 4500 per night <img src="images/dudhsagar-resort.jpg" alt="Dudhsagar Resort" class="hotel-image"></li>
-                        <li>Medium Budget Hotel: <strong>Jungle Retreat</strong> - Rs 2500 per night <img src="images/jungle-retreat.jpg" alt="Jungle Retreat" class="hotel-image"></li>
-                        <li>Low Budget Hotel: <strong>Local Lodge</strong> - Rs 650 per night <img src="images/local-lodge.jpg" alt="Local Lodge" class="hotel-image"></li>
-                    </ul>
-                    <h4>Transport</h4>
-                    <p>Accessible via road; best explored by car or bike. <img src="images/car-icon.png" alt="Car Icon" class="transport-icon"><img src="images/bike-icon.png" alt="Bike Icon" class="transport-icon"></p>
-                    <h4>Food</h4>
-                    <p>Enjoy local delicacies like Xacuti and Goan sausages. <img src="images/xacuti.jpg" alt="Xacuti" class="food-image"></p>
-                    <h4>Famous For</h4>
-                    <p>Waterfalls and wildlife sanctuaries.</p>
-                </div>
+                <h5>Mid-Range Hotels</h5>
+                <ul>
+                    <li>Nature's Retreat - ₹4000/night <a href="goa4booking.html">Book Now</a></li>
+                </ul>
+                <h5>Budget Hotels</h5>
+                <ul>
+                    <li>Local Inn - ₹1500/night <a href="goa4booking.html">Book Now</a></li>
+                </ul>
+            </div>
+            <img src="sanguem_food.jpg" alt="Sanguem Famous Food" class="food-img">
+                <p>Famous Food: Pork Vindaloo</p>
+                <a href="https://www.youtube.com/watch?v=sanguem_food_video" target="_blank">Watch Pork Vindaloo Recipe</a>
+
+                <!-- Handicrafts -->
+                <img src="sanguem_art.jpg" alt="Sanguem Handicraft" class="art-img">
+                <p>Handicraft: Wooden Carvings</p>
+                <a href="https://www.youtube.com/watch?v=sanguem_art_video" target="_blank">Watch Wooden Carvings</a>
+
+
+            <!-- Side Attractions -->
+            <div class="side-attractions-section"></div>
+                <p>Side-attractions</p>
+                <ul>
+                    <li>Devkund Waterfall <img src="images/devkund-waterfall.jpg" alt="Devkund Waterfall"> <a href="https://www.youtube.com/watch?v=devkund-waterfall-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Shree Ramnath Temple <img src="images/shree-ramnath-temple.jpg" alt="Shree Ramnath Temple"> <a href="https://www.youtube.com/watch?v=shree-ramnath-temple-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Rivona Caves <img src="images/rivona-caves.jpg" alt="Rivona Caves"> <a href="https://www.youtube.com/watch?v=rivona-caves-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Shree Bhagavati Temple <img src="images/shree-bhagavati-temple.jpg" alt="Shree Bhagavati Temple"> <a href="https://www.youtube.com/watch?v=shree-bhagavati-temple-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Shree Mahalasa Narayani Temple <img src="images/shree-mahalasa-narayani-temple.jpg" alt="Shree Mahalasa Narayani Temple"> <a href="https://www.youtube.com/watch?v=shree-mahalasa-narayani-temple-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Kumba Caves <img src="images/kumba-caves.jpg" alt="Kumba Caves"> <a href="https://www.youtube.com/watch?v=kumba-caves-video" target="_blank">Watch on YouTube</a></li>
+                </ul>
+            </div>
+
+
+        <!-- Tourist Spot 4: Quepem -->
+        <div class="tourist-spot">
+            <h3>Quepem</h3>
+            <p>Quepem is known for its historical forts, beautiful churches, and local markets.</p>
+            <h4>Why Visit Quepem?</h4>
+            <ul>
+                <li>Explore historical forts</li>
+                <li>Visit beautiful churches</li>
+                <li>Enjoy local cuisine and markets</li>
+            </ul>
+            <h4>Distance & Transport:</h4>
+            <ul>
+                <li><i class="ri-train-line"></i> Railway: 20 km from Quepem Railway Station</li>
+                <li><i class="ri-bus-line"></i> Bus: 10 km from Quepem Bus Stop</li>
+                <li><i class="ri-car-line"></i> Car Route: 55 km from Panaji</li>
+            </ul>
+            <div class="route-images">
+                <h4>Route Images</h4>
+                <img src="images/quepem_railway.jpg" alt="Quepem Railway Route">
+                <img src="images/quepem_bus.jpg" alt="Quepem Bus Route">
+                <img src="images/quepem_car.jpg" alt="Quepem Car Route">
+            </div>
+
+            <!-- Hotel Options -->
+            <div class="hotels">
+                <h4>Hotel Options in Quepem</h4>
+                <h5>Luxury Hotels</h5>
+                <ul>
+                    <li>Quepem Heritage Hotel - ₹7500/night <a href="goa4booking.html">Book Now</a></li>
+                </ul>
+                <h5>Mid-Range Hotels</h5>
+                <ul>
+                    <li>Quepem Resort - ₹4000/night <a href="goa4booking.html">Book Now</a></li>
+                </ul>
+                <h5>Budget Hotels</h5>
+                <ul>
+                    <li>Quepem Guest House - ₹1500/night <a href="goa4booking.html">Book Now</a></li>
+                </ul>
+            </div>
+
+            <!-- Side Attractions -->
+            <div class="side-attractions">
+                <h4>Side Attractions</h4>
+                <ul>
+                    <li>Shree Chandreshwar Bhootnath Temple <img src="images/chandreshwar-bhootnath.jpg" alt="Shree Chandreshwar Bhootnath Temple"> <a href="https://www.youtube.com/watch?v=chandreshwar-bhootnath-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Shree Bhagwati Temple <img src="images/shree-bhagwati-temple.jpg" alt="Shree Bhagwati Temple"> <a href="https://www.youtube.com/watch?v=shree-bhagwati-temple-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Cola Beach <img src="images/cola-beach.jpg" alt="Cola Beach"> <a href="https://www.youtube.com/watch?v=cola-beach-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Shree Naguesh Temple <img src="images/naguesh-temple.jpg" alt="Shree Naguesh Temple"> <a href="https://www.youtube.com/watch?v=naguesh-temple-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Butterfly Beach <img src="images/butterfly-beach.jpg" alt="Butterfly Beach"> <a href="https://www.youtube.com/watch?v=butterfly-beach-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Shree Laxmi Narayan Temple <img src="images/laxmi-narayan-temple.jpg" alt="Shree Laxmi Narayan Temple"> <a href="https://www.youtube.com/watch?v=laxmi-narayan-temple-video" target="_blank">Watch on YouTube</a></li>
+                </ul>
             </div>
         </div>
 
-        <!-- Quepem -->
-        <div class="location-card" data-location="quepem">
-            <img src="images/quepem.jpg" alt="Quepem">
-            <div class="location-content">
-                <h3>Quepem</h3>
-                <p>Quepem is rich in history and natural beauty, with unique attractions.</p>
+        <!-- Tourist Spot 5: Margao -->
+        <div class="tourist-spot">
+            <h3>Margao</h3>
+            <p>Margao is the commercial and cultural hub of Goa, known for its vibrant markets and historic churches.</p>
+            <h4>Why Visit Margao?</h4>
+            <ul>
+                <li>Explore the bustling markets</li>
+                <li>Visit historic churches</li>
+                <li>Enjoy the local cuisine</li>
+            </ul>
+            <h4>Distance & Transport:</h4>
+            <ul>
+                <li><i class="ri-train-line"></i> Railway: 5 km from Margao Railway Station</li>
+                <li><i class="ri-bus-line"></i> Bus: 3 km from Margao Bus Stop</li>
+                <li><i class="ri-car-line"></i> Car Route: 35 km from Panaji</li>
+            </ul>
+            <div class="route-images">
+                <h4>Route Images</h4>
+                <img src="images/margao_railway.jpg" alt="Margao Railway Route">
+                <img src="images/margao_bus.jpg" alt="Margao Bus Route">
+                <img src="images/margao_car.jpg" alt="Margao Car Route">
+            </div>
+
+            <!-- Hotel Options -->
+            <div class="hotels">
+                <h4>Hotel Options in Margao</h4>
+                <h5>Luxury Hotels</h5>
                 <ul>
-                    <li>Netravali Wildlife Sanctuary - <a href="https://www.youtube.com/watch?v=example19" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Salaulim Dam - <a href="https://www.youtube.com/watch?v=example20" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Kuskem Waterfall - <a href="https://www.youtube.com/watch?v=example21" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Harvalem Waterfall - <a href="https://www.youtube.com/watch?v=example22" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Rock Formations at Rivona - <a href="https://www.youtube.com/watch?v=example23" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Quepem Market - <a href="https://www.youtube.com/watch?v=example24" class="youtube-link">Watch on YouTube</a></li>
+                    <li>Grand Margao Hotel - ₹8500/night <a href="goa4booking.html">Book Now</a></li>
                 </ul>
-                <button class="load-more">Learn More</button>
-                <div class="location-extra" style="display: none;">
-                    <h4>Hotels</h4>
-                    <ul>
-                        <li>Top Budget Hotel: <strong>Quepem Retreat</strong> - Rs 3700 per night <img src="images/quepem-retreat.jpg" alt="Quepem Retreat" class="hotel-image"></li>
-                        <li>Medium Budget Hotel: <strong>River View Hotel</strong> - Rs 1400 per night <img src="images/river-view.jpg" alt="River View Hotel" class="hotel-image"></li>
-                        <li>Low Budget Hotel: <strong>Local Inn</strong> - Rs 500 per night <img src="images/local-inn.jpg" alt="Local Inn" class="hotel-image"></li>
-                    </ul>
-                    <h4>Transport</h4>
-                    <p>Best reached by car; well-connected by road. <img src="images/car-icon.png" alt="Car Icon" class="transport-icon"></p>
-                    <h4>Food</h4>
-                    <p>Savor local dishes like Goan prawn balchão and Sorpotel. <img src="images/prawn-balchao.jpg" alt="Prawn Balchão" class="food-image"></p>
-                    <h4>Famous For</h4>
-                    <p>Historical sites and scenic spots.</p>
-                </div>
+                <h5>Mid-Range Hotels</h5>
+                <ul>
+                    <li>Comfort Inn Margao - ₹4000/night <a href="goa4booking.html">Book Now</a></li>
+                </ul>
+                <h5>Budget Hotels</h5>
+                <ul>
+                    <li>Margao Budget Stay - ₹1200/night <a href="goa4booking.html">Book Now</a></li>
+                </ul>
+            </div>
+
+            <!-- Side Attractions -->
+            <div class="side-attractions">
+                <h4>Side Attractions</h4>
+                <ul>
+                    <li>Church of the Holy Spirit <img src="images/church-holy-spirit.jpg" alt="Church of the Holy Spirit"> <a href="https://www.youtube.com/watch?v=church-holy-spirit-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Margao Municipal Garden <img src="images/margao-garden.jpg" alt="Margao Municipal Garden"> <a href="https://www.youtube.com/watch?v=margao-garden-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Colva Beach <img src="images/colva-beach.jpg" alt="Colva Beach"> <a href="https://www.youtube.com/watch?v=colva-beach-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Shree Damodar Temple <img src="images/damodar-temple.jpg" alt="Shree Damodar Temple"> <a href="https://www.youtube.com/watch?v=damodar-temple-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Goa Chitra Museum <img src="images/goa-chitra.jpg" alt="Goa Chitra Museum"> <a href="https://www.youtube.com/watch?v=goa-chitra-video" target="_blank">Watch on YouTube</a></li>
+                    <li>Betalbatim Beach <img src="images/betalbatim-beach.jpg" alt="Betalbatim Beach"> <a href="https://www.youtube.com/watch?v=betalbatim-beach-video" target="_blank">Watch on YouTube</a></li>
+                </ul>
             </div>
         </div>
-
-        <!-- Margao -->
-        <div class="location-card" data-location="margao">
-            <img src="images/margao.jpg" alt="Margao">
-            <div class="location-content">
-                <h3>Margao</h3>
-                <p>Margao is the cultural capital of Goa, offering a blend of modernity and tradition.</p>
-                <ul>
-                    <li>Church of the Holy Spirit - <a href="https://www.youtube.com/watch?v=example25" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Savoi Spice Plantations - <a href="https://www.youtube.com/watch?v=example26" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Tambdi Surla Mahadev Temple - <a href="https://www.youtube.com/watch?v=example27" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Bhagwan Mahaveer Sanctuary - <a href="https://www.youtube.com/watch?v=example28" class="youtube-link">Watch on YouTube</a></li>
-                    <li>Margao Market - <a href="https://www.youtube.com/watch?v=example29" class="youtube-link">Watch on YouTube</a></li>
-                </ul>
-                <button class="load-more">Learn More</button>
-                <div class="location-extra" style="display: none;">
-                    <h4>Hotels</h4>
-                    <ul>
-                        <li>Top Budget Hotel: <strong>Margao Comfort</strong> - Rs 4000 per night <img src="images/margao-comfort.jpg" alt="Margao Comfort" class="hotel-image"></li>
-                        <li>Medium Budget Hotel: <strong>City Center Hotel</strong> -  Rs 1700 per night <img src="images/city-center.jpg" alt="City Center Hotel" class="hotel-image"></li>
-                        <li>Low Budget Hotel: <strong>Local Lodge</strong> - Rs 550 per night <img src="images/local-lodge.jpg" alt="Local Lodge" class="hotel-image"></li>
-                    </ul>
-                    <h4>Transport</h4>
-                    <p>Well-connected by road and rail; frequent public transport available. <img src="images/train-icon.png" alt="Train Icon" class="transport-icon"><img src="images/bus-icon.png" alt="Bus Icon" class="transport-icon"></p><img src="" alt="car-icon" class="transport-icon">
-                    <h4>Food</h4>
-                    <p>Must-try dishes include Goan vindaloo and crab curry. <img src="images/vindaloo.jpg" alt="Vindaloo" class="food-image"></p>
-                    <h4>Famous For</h4>
-                    <p>Beaches and cultural landmarks. <img src="" alt="" class=""></p>
-                </div>
-            </div>
-        </div>
-
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <p>Contact Us:</p>
-        <p>Phone: +91-1234567890</p>
-        <p>Email: <a href="mailto:example@email.com">example@email.com</a></p>
-        <p>Learn more about Goan culture: <a href="">Goa Government Website</a></p>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Explore Goa. All Rights Reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="goa4term.html">Terms of Service</a></p>
+        </div>
     </footer>
-
-    <script src="goa4.js"></script>
 </body>
-
 </html>
+
