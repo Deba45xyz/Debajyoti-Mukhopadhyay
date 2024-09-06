@@ -1,210 +1,316 @@
-/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background: #f0f0f0;
 }
 
-.header {
+header {
+    background: rgba(0, 0, 0, 0.6); /* Dark header background for contrast */
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background: #ff9900; /* Goa vibe color */
     padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.header-logo img {
-    height: 40px;
+.header-container h1 {
+    color: #fff;
+    font-size: 2em;
 }
 
-.header-nav a, 
-.explore-box {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #2c3e50; /* Deep color */
-    color: #fff; /* White text */
+.search-bar input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
 }
 
+.search-bar button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-.dropdown {
+.nav-icons i {
+    color: #fff;
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+}
+
+.top-nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.top-nav .language-dropdown {
     position: relative;
 }
 
-.dropdown-content {
+.language-dropdown .dropdown-content {
     display: none;
     position: absolute;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.language-dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .dropdown-content a {
+    color: black;
     padding: 12px 16px;
-    display: block;
-    color: #333;
     text-decoration: none;
+    display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #ddd;
 }
-
-.hero {
-    position: relative;
-    height: 500px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 1;
-    color: white;
-    text-align: center;
-}
-
-.search-form {
-    margin-top: 20px;
-}
-
-.search-form input {
-    padding: 10px;
-    width: 300px;
-    border: none;
-    border-radius: 5px;
-}
-
-.search-form button {
-    padding: 10px;
-    border: none;
-    background-color: #e67876;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-}
-
-.hero-backgrounds {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-#background-container {
+.search-map-container {
     display: flex;
     justify-content: space-between;
-    height: 100vh; /* Full viewport height */
+    align-items: center;
+    padding: 20px;
+    background: url('images/goa-texture.jpg'); /* Goa vibe texture */
+    background-size: cover;
+}
+.search-bar {
+    flex: 1;
+    margin-right: 20px;
+}
+.slideshow {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
 }
 
 .background {
-    flex: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
-    height: 100%;
-    width: 100%;
+    animation: slide 6s infinite;
 }
-
-#background1 {
-    background-image: url('https://images.cnbctv18.com/wp-content/uploads/2022/05/Goa-shutterstock-1000x573.jpg');
-}
-
-#background2 {
-    background-image: url('https://lp-cms-production.imgix.net/2024-07/shutterstockRF248021569.jpg?w=1440&h=810&fit=crop&auto=format&q=75');
-}
-
-#background3 {
-    background-image: url('https://images.news18.com/ibnlive/uploads/2022/04/goa-165000177716x9.png');
-}
-
 
 @keyframes slide {
-    0% { opacity: 0; }
-    10% { opacity: 1; }
-    33% { opacity: 1; }
-    43% { opacity: 0; }
+    0% { opacity: 1; }
+    33% { opacity: 0; }
+    66% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
-.map-section {
+.tourist-spots {
     padding: 20px;
-    text-align: center;
+    background: #fff;
 }
 
-.location-details {
+.tourist-spot {
+    margin-bottom: 40px;
     padding: 20px;
-}
-
-.location-card {
-    display: flex;
-    margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    overflow: hidden;
+    background: #fafafa;
 }
 
-.location-card img {
-    width: 200px;
-    height: 150px;
-    object-fit: cover;
+.tourist-spot img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
-.location-content {
+.side-attractions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-attractions li {
+    margin-bottom: 10px;
+}
+
+.side-attractions img {
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.route-images img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.booking-form, .sign-in-form {
     padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-.load-more {
-    background-color: #e9a3a2;
-    color: #fff;
-    border: none;
+.booking-form form, .sign-in-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form label, .sign-in-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.booking-form input[type="date"], .sign-in-form input[type="email"], .sign-in-form input[type="password"] {
     padding: 10px;
     border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.booking-form select, .sign-in-form input[type="submit"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.booking-form input[type="submit"], .sign-in-form input[type="submit"] {
+    background: #007bff;
+    color: #fff;
+    border: none;
     cursor: pointer;
 }
 
-.location-extra {
+.booking-form input[type="submit"]:hover, .sign-in-form input[type="submit"]:hover {
+    background: #0056b3;
+}
+.read-more-btn {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
-.hotel-image {
-    width: 100px;
+.read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+/* General Styling for List Items */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+.food-img, .art-img {
+    width: 200px;
     height: auto;
+    margin-bottom: 10px;
 }
 
-.transport-icon {
-    width: 20px;
-    height: auto;
-    margin-right: 10px;
-}
-
-.food-image {
-    width: 100px;
-    height: auto;
-}
-
-.footer {
-    background-color: #f7f7f7;
-    padding: 10px;
+.footer-container {
+    background: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
     text-align: center;
-    border-top: 1px solid #ddd;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-    .location-card {
-        flex-direction: column;
-    }
-
-    .location-card img {
-        width: 100%;
-        height: auto;
-    }
-
-    .search-form input {
-        width: calc(100% - 100px);
-    }
+.footer-container a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
 }
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+.terms-of-service {
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.terms-of-service h2 {
+    color: #ff9900;
+}
+
+.terms-of-service h3 {
+    color: #ff6600;
+}
+
+.terms-of-service p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+/* General styles for the privacy policy page */
+.privacy-policy {
+    padding: 20px;
+    background: #e0f2f1; /* Light green background */
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.privacy-policy h2 {
+    color: #004d40; /* Dark green for headers */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.privacy-policy h3 {
+    color: #004d40;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.privacy-policy p {
+    line-height: 1.6;
+}
+
+.privacy-policy ul {
+    margin-left: 20px;
+}
+
+.privacy-policy li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #004d40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
