@@ -1,0 +1,200 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-nav h1 {
+    font-size: 2em;
+    color: #ff9900;
+}
+
+.top-nav nav {
+    display: flex;
+    align-items: center;
+}
+
+.top-nav nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background: #ff9900;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.language-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Map Section */
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.india-map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Draggable Pin */
+.pin {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url(https://maps.google.com/mapfiles/ms/icons/blue-dot.png) no-repeat center center;
+    background-size: contain;
+    cursor: move;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 100%;
+}
+
+/* Highlighted State */
+.highlight {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 0, 0.3); /* Yellow transparent highlight */
+    border-radius: 50%;
+    pointer-events: none; /* So it won't interfere with map dragging */
+    display: none; /* Initially hidden */
+    z-index: 50;
+}
+
+/* Footer */
+footer {
+    background: #004d40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+/* Sign-In Form Styling */
+.sign-in-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f4f4f4;
+}
+
+.sign-in-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.sign-in-form h2 {
+    color: #ff9900;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sign-in-form label {
+    font-weight: bold;
+    color: #004d40;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.sign-in-form input[type="email"], 
+.sign-in-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.sign-in-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sign-in-form input[type="submit"]:hover {
+    background-color: #ff9900;
+}
+
+.sign-in-form p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sign-in-form p a {
+    color: #ff9900;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sign-in-form p a:hover {
+    text-decoration: underline;
+}
